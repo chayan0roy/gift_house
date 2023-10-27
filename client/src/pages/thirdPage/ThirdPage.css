@@ -1,0 +1,7 @@
+.thirddPage {
+    position: relative;
+    z-index: 10;
+    top: 12vh;
+    padding: 0 2%;
+    background-color: #dddddd;
+}

@@ -1,0 +1,6 @@
+.secondPage {
+    position: relative;
+    z-index: 10;
+    top: 12vh;
+    background-color: #dddddd;
+}
