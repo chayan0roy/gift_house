@@ -16,7 +16,7 @@ export default function ThirdPage({ addToCart, setBuyProductData }) {
     const [productList, setProductList] = useState();
 
     const get_TP_Producs = async () => {
-        const result = await axios.get(`http://localhost:5000/get_tp_producs/${params.productTypeToken}`);
+        const result = await axios.get(`https://gift-house-back.onrender.com/get_tp_producs/${params.productTypeToken}`);
         setProductList(result.data);
     }
 

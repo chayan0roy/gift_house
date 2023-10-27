@@ -14,7 +14,7 @@ export default function SecondPage() {
 	const [productTypeList, setProductTypeList] = useState();
 
 	const get_SP_ProductType = async () => {
-		const result = await axios.get(`http://localhost:5000/get_sp_product_type/${params.catagoryToken}`);
+		const result = await axios.get(`https://gift-house-back.onrender.com/get_sp_product_type/${params.catagoryToken}`);
 		setProductTypeList(result.data);
 	}
 

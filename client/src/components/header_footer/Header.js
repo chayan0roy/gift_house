@@ -26,7 +26,7 @@ export default function Header({ addToCart, setPPCartData, PPCartData, isLogin, 
 		const token = Cookies.get("auth_token");
 		let fromData = new FromData();
 		fromData.append("token", token);
-		const result = await axios.post("http://localhost:5000/getUserImage", fromData,);
+		const result = await axios.post("https://gift-house-back.onrender.com/getUserImage", fromData,);
 		setUserImg(result.data.userImg);
 	}
 

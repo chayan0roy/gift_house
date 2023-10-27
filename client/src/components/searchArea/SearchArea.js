@@ -22,7 +22,7 @@ export default function SearchArea({ addToCart, setBuyProductData }) {
         if (key == "") {
             setResultData(undefined);
         } else {
-            let result = await fetch(`http://localhost:5000/search/${key}`);
+            let result = await fetch(`https://gift-house-back.onrender.com/search/${key}`);
             result = await result.json();
             setResultData(result);
         }
