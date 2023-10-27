@@ -12,7 +12,7 @@ export default function FrontPage() {
 	const [catagoryList, setCatagoryList] = useState();
 
 	const get_FP_Catagory = async () => {
-		const result = await axios.get("https://gift-house-back.onrender.com/get_fp_catagory");
+		const result = await axios.get("http://localhost:5000/get_fp_catagory");
 		setCatagoryList(result.data);
 	}
 

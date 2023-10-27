@@ -64,7 +64,7 @@ export default function AddData() {
         fromData.append("deliveryCharge", deliveryCharge);
         fromData.append("rating", rating);
 
-        const result = await axios.post("https://gift-house-back.onrender.com/addData", fromData,);
+        const result = await axios.post("http://localhost:5000/addData", fromData,);
         if (result.status == 201) {
             alert("Product Uploaded")
         }

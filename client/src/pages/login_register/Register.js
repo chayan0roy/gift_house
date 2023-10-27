@@ -34,7 +34,7 @@ export default function Register() {
 				fromData.append("email", email);
 				fromData.append("password", password);
 
-				const result = await axios.post("https://gift-house-back.onrender.com/register", fromData,);
+				const result = await axios.post("http://localhost:5000/register", fromData,);
 				navigate('/login');
 			} else {
 				alert("Password and Confrom Password");

@@ -25,7 +25,7 @@ export default function PrivateComponent({ isLogin, setIsLogin, addToCart, buyPr
         if (token) {
             let fromData = new FromData();
             fromData.append("token", token);
-            const result = await axios.post("https://gift-house-back.onrender.com/getToken", fromData,);
+            const result = await axios.post("http://localhost:5000/getToken", fromData,);
             if (result.data.message) {
                 setIsLogin(true);
                 navigate('/');
