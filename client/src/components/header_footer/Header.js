@@ -7,9 +7,7 @@ import './Header.css'
 import AddToCart from '../../pages/addToCartPage/AddToCart'
 import SearchArea from '../searchArea/SearchArea'
 import homeImg from '../../assets/home.png'
-import addDataImg from '../../assets/database.png'
 import logoutImg from '../../assets/logout.png'
-import userImg from '../../assets/trash.png'
 
 
 export default function Header({ addToCart, setPPCartData, PPCartData, isLogin, setIsLogin, setBuyProductData }) {
@@ -39,7 +37,7 @@ export default function Header({ addToCart, setPPCartData, PPCartData, isLogin, 
 	return (
 		<div className='header flex3'>
 			<div className='headerLogoArea'>
-				Gift-House
+				Gift House
 			</div>
 			<div className='headerLinkArea'>
 				{
@@ -47,7 +45,6 @@ export default function Header({ addToCart, setPPCartData, PPCartData, isLogin, 
 						?
 						<>
 							<Link className='link navLink flex' to='/'><img src={homeImg} /></Link>
-							<Link className='link navLink flex' to='/addData'><img src={addDataImg} /></Link>
 							<SearchArea addToCart={addToCart} setBuyProductData={setBuyProductData} />
 							<AddToCart PPCartData={PPCartData} setPPCartData={setPPCartData} />
 							<Link className='link navLink flex' onClick={logout} to='/register'><img src={logoutImg} /></Link>

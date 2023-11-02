@@ -24,7 +24,7 @@ export default function Login({ setIsLogin }) {
 				setIsLogin(true);
 				navigate('/');
 			} else {
-				console.log("Wrong email or password");
+				alert("Wrong email or password");
 				navigate('/register');
 			}
 		} else {

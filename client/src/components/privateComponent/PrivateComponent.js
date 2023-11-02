@@ -7,7 +7,6 @@ import FromData from 'form-data';
 import FrontPage from '../../pages/frontPage/FrontPage';
 import SecondPage from '../../pages/secondPage/SecondPage';
 import ThirdPage from '../../pages/thirdPage/ThirdPage';
-import AddData from '../../pages/addData/AddData';
 import BuyPage from '../../pages/buy/BuyPage';
 import BuyChart from '../../pages/buy/BuyChart';
 import Register from '../../pages/login_register/Register';
@@ -50,7 +49,6 @@ export default function PrivateComponent({ isLogin, setIsLogin, addToCart, buyPr
                         <Route path='/thirdPage/:productTypeToken' element={<ThirdPage addToCart={addToCart} setBuyProductData={setBuyProductData} />} />
                         <Route path='/buyPage' element={<BuyPage buyProductData={buyProductData} addToCart={addToCart} />} />
                         <Route path='/buyChart' element={<BuyChart />} />
-                        <Route path='/addData' element={<AddData />} />
                     </>
                     :
                     <>
